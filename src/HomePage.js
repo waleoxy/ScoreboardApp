@@ -38,18 +38,22 @@ function HomePage() {
 
     let counter = 0;
     let rand = []
+
     return (
         
 <div className="container">
+    <div className="header">
     <button onClick ={handleStart}>Start</button>
+    <h1> My Leaderboard</h1>
     <button onClick ={handleStop}>Stop</button>
+    </div>
     ;
         { 
           
             studentsResult.map(result =>(
-            
+        
         <div className="row">
-           <div className="col-10 col-sm-8 col-md-6">
+            <div className="col-10 col-sm-8 col-md-6">
         <div className="card m-1 pb-2" style={{height: '8rem', width:'80vw'}}>
             <div class="card-body">
             <table className="table">
@@ -69,7 +73,9 @@ function HomePage() {
                         <td>{result.login.username}</td>
                         </tr>
                     </td>
-                    <td>{ }</td>
+                   
+                    <td>{ rand = Math.floor(Math.random() * 100 * (result.dob.age/100) )}</td>
+                    
                     </tr>
                 </tbody>
             </table>

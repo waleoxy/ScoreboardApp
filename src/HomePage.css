@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header > button {
+  color: white;
+  background-color: gray;
+  font-size: large;
+  width: 18rem;
+  padding: 6px;
+}

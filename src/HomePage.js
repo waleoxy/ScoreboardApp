@@ -36,7 +36,7 @@ function HomePage() {
 
     useEffect(() => {
         handleStart()
-    }, [start])
+    }, [])
 
     let counter = 0;
     let rand = []

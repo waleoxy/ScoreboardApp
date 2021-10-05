@@ -24,18 +24,19 @@ function HomePage() {
     }
     else{
         setstart (!start)
+        clearInterval(load)
     }
        return load   
  }
 
     const handleStop =  () => {
         setstart(false)
-        clearInterval(handleStart())
+        clearInterval(load)
     }
 
     useEffect(() => {
         handleStart()
-    }, [])
+    }, [start])
 
     let counter = 0;
     let rand = []

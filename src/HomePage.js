@@ -20,16 +20,17 @@ function HomePage() {
         
     }, 1000);
     
-        return load
+      
     }
     else{
         setstart (!start)
     }
-        
+       return load   
  }
 
     const handleStop =  () => {
         setstart(false)
+        clearInterval(handleStart())
     }
 
     useEffect(() => {
